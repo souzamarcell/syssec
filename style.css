@@ -207,6 +207,29 @@ footer span {
   color: var(--secondary);
 }
 
+
+/* ===== WHATSAPP LINK ===== */
+.whatsapp-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #25D366;
+  margin-left: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.whatsapp-link:hover {
+  color: #1ebe5d;
+}
+
+.contact h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 768px) {
   .logo img {
     height: 50px;
