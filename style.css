@@ -206,3 +206,9 @@ footer {
 footer span {
   color: var(--secondary);
 }
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 50px;
+  }
+}
