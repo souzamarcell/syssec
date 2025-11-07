@@ -86,3 +86,25 @@ if (document.readyState === 'loading') {
 
   trocarImagem()
   setInterval(trocarImagem, 12000) // troca imagem a cada 12s
+
+  // MENU HAMBURGUER
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    menuToggle.querySelector('i').classList.toggle('fa-bars');
+    menuToggle.querySelector('i').classList.toggle('fa-times');
+  });
+
+  // Fecha o menu ao clicar em um link
+  document.querySelectorAll('nav ul li a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active');
+      menuToggle.querySelector('i').classList.add('fa-bars');
+      menuToggle.querySelector('i').classList.remove('fa-times');
+    });
+  });
+});
+
